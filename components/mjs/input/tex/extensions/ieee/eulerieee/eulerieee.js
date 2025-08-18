@@ -1,5 +1,5 @@
 import './lib/eulerieee.js';
-import {MathJax, combineDefaults} from 'mathjax-full/js/components/global.js';
+import {MathJax, combineDefaults} from '@mathjax/src/js/components/global.js';
 
 const FONTPATH = (typeof document === 'undefined' ?
                    '@mathjax/ieee-euler-font-extension' :
