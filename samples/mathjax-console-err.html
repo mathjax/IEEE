@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript" src="./ieee-config.js"></script>
+		<script type="text/javascript" src="./mathjax4/tex-chtml.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h2>
+				MathJax 4 Example
+			</h2>
+			<div>
+				\begin{equation*}
+				\hspace{-20pt} \underbrace{{\color{red}{\hbox{$\text{P}(A)$}}}}_{\text{sinc}}
+				 \underbrace{{\color{Orange}{\hbox{$\text{DFT}^{-1} Q \text{DFT}$}}}}_{Q \text{ in time}} \!\odot\! \overbrace{\underbrace{{\color{blue}{\hbox{$\begin{bmatrix}
+				 1\\ 0\\1\\0
+				 \end{bmatrix}$}}\!\!{\hbox{$\odot$}}\!\!}}_{\delta} \underbrace{\begin{bmatrix}
+				 s_0\\s_1\\s_2\\s_3
+				 \end{bmatrix}}_{s}}^{s_\delta} \!\!\!\xrightarrow{\mathcal{F}} \!\!\! \\ \underbrace{{\color{red}{\hbox{$\begin{bmatrix}1\\1\\0\\0 \end{bmatrix}$}}{\hbox{$\odot$}}}}_{\text{l.p.f.}}\color{Orange}{\hbox{${Q}$}}\overbrace{\underbrace{{\color{blue}{\hbox{$\!\frac{1}{2}\!\begin{bmatrix}I_2 &amp; I_2 \\ I_2 &amp;I_2\end{bmatrix}$}}}}_{\text{P}(M)}\!\!
+				 \underbrace{\begin{bmatrix}
+				 \widehat{s_0}\\ \widehat{s_1}\\0\\0
+				 \end{bmatrix}}_{\widehat{s}}}^{\widehat{x_\delta}}
+				\end{equation*}
+			</div>
+		<div>
+	</body>
+</html>
