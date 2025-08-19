@@ -45,7 +45,7 @@ jobs:
           pnpm build
           cd ..
           mkdir IEEE
-          mv build IEEE/mathjax4
+          mv build/bundle IEEE/mathjax4
           cp samples/* IEEE/
           cp ieee-config.js IEEE/
           
