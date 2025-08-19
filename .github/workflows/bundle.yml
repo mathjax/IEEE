@@ -1,0 +1,57 @@
+name: Bundle
+
+on:
+  push:
+    branches:
+      - "*"
+
+
+jobs:
+  bundle:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    name: Generate Code Docs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10
+          run_install: false
+
+      - name: Install packages
+        run: pnpm i
+
+      - name: Building new release
+        run: |
+          mkdir -p build
+          cp -r node_modules/@mathjax/src/* build/
+          cp -r components/* build/components
+          cp -r ts/* build/ts
+          cd build
+          ls
+          pnpm install
+          pushd ts/a11y/sre/
+          ls
+          rm sre-lab.ts
+          ls
+          sed -i s/sre-lab/sre/g speech-worker.ts
+          popd
+          chmod 755 components/bin/*
+          pnpm build
+          cd ..
+          mkdir IEEE
+          mv build IEEE/mathjax4
+          cp samples/* IEEE/
+          cp ieee-config.js IEEE/
+          
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ieee
+          path: './IEEE'
+
