@@ -1,10 +1,21 @@
 {
-	"dependencies": {
-		"@mathjax/src": "^4.1.0",
-		"typescript": "^5.9.3"
-	},
-	"type": "module",
-	"devDependencies": {
-		"webpack-cli": "^6.0.1"
-	}
+  "scripts": {
+    "build": "pnpm tsc"
+  },
+  "dependencies": {
+    "@mathjax/ieee-euler-font-extension": "^4.1.0",
+    "@mathjax/mathjax-bbm-font-extension": "^4.1.0",
+    "@mathjax/mathjax-bboldx-font-extension": "^4.1.0",
+    "@mathjax/mathjax-dsfont-font-extension": "^4.1.0",
+    "@mathjax/mathjax-newcm-font": "^4.1.0",
+    "@mathjax/mathjax-stix2-font": "^4.1.0",
+    "@mathjax/src": "^4.1.0",
+    "terser-webpack-plugin": "^5.3.16",
+    "typescript": "^5.9.3",
+    "webpack": "^5.104.1"
+  },
+  "type": "module",
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  }
 }

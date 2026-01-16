@@ -1,11 +1,13 @@
 import './lib/ieeestix.js';
-import {MathJax, combineDefaults} from '@mathjax/src/mjs/components/global.js';
+import {MathJax, combineDefaults} from '@mathjax/src/js/components/global.js';
 
 // Temporary for local testing!
 // const FONTPATH = 'node_modules/mathjax-stix2-font';
 const FONTPATH = (typeof document === 'undefined' ?
                    '@mathjax/mathjax-stix2-font' :
-                   'https://cdn.jsdelivr.net/npm/@mathjax/mathjax-stix2-font');
+                  (MathJax?.config?.loader?.paths?.fonts ?
+                   MathJax.config.loader.paths.fonts + '/mathjax-stix2-font' :
+                   'https://cdn.jsdelivr.net/npm/@mathjax/mathjax-stix2-font'));
 
 combineDefaults(MathJax.config, 'loader', {
   paths: {

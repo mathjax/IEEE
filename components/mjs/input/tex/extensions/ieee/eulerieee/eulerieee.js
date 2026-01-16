@@ -1,9 +1,11 @@
 import './lib/eulerieee.js';
-import {MathJax, combineDefaults} from '@mathjax/src/mjs/components/global.js';
+import {MathJax, combineDefaults} from '@mathjax/src/js/components/global.js';
 
 const FONTPATH = (typeof document === 'undefined' ?
                    '@mathjax/ieee-euler-font-extension' :
-                   'https://cdn.jsdelivr.net/npm/@mathjax/ieee-euler-font-extension');
+                  (MathJax?.config?.loader?.paths?.fonts ?
+                   MathJax.config.loader.paths.fonts + '/ieee-euler-font-extension' :
+                   'https://cdn.jsdelivr.net/npm/@mathjax/ieee-euler-font-extension'));
 
 if (MathJax.config?.loader) {
   combineDefaults(MathJax.config.loader, 'paths', {

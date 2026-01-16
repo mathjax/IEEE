@@ -1,5 +1,8 @@
 window.MathJax = {
   loader: {
+    paths: {
+      fonts: './mathjax4/fonts'
+    },
     load: [
       '[tex]/ieeemacros',
       '[tex]/ieeelegacy',
