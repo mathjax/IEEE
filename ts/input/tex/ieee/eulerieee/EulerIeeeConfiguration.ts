@@ -1,7 +1,7 @@
-import {Configuration} from '../../Configuration.js';
-import {CommandMap} from '../../TokenMap.js';
-import BaseMethods from '../../base/BaseMethods.js';
-import {ParseMethod} from '../../Types.js';
+import {Configuration} from '@mathjax/src/js/input/tex/Configuration.js';
+import {CommandMap} from '@mathjax/src/js/input/tex/TokenMap.js';
+import BaseMethods from '@mathjax/src/js/input/tex/base/BaseMethods.js';
+import {ParseMethod} from '@mathjax/src/js/input/tex/Types.js';
 
 /**
  * The methods that implement the ieee euler package.

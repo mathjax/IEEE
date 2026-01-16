@@ -36,9 +36,7 @@ jobs:
           ls
           pnpm install
           pushd ts/a11y/sre/
-          ls
           rm sre-lab.ts
-          ls
           sed -i s/sre-lab/sre/g speech-worker.ts
           popd
           chmod 755 components/bin/*

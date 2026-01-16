@@ -22,8 +22,8 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {ArrayItem} from '../../base/BaseItems.js';
-import NodeUtil from '../../NodeUtil.js';
+import {ArrayItem} from '@mathjax/src/js/input/tex/base/BaseItems.js';
+import NodeUtil from '@mathjax/src/js/input/tex/NodeUtil.js';
 
 //
 //  Subclass of array stack item to handle vertical rules and \hfill for

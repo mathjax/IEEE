@@ -2,7 +2,8 @@
   "build": {
     "id": "[tex]/ieee/ieeelegacy",
     "component": "input/tex/extensions/ieee/ieeelegacy",
-    "targets": ["input/tex/ieee/ieeelegacy"]
+    "targets": ["input/tex/ieee/ieeelegacy"],
+    "js": "../../../../../../../js/"
   },
   "webpack": {
     "name": "input/tex/extensions/ieeelegacy",

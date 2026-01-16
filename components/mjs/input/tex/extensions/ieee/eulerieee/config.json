@@ -2,7 +2,8 @@
   "build": {
     "id": "[tex]/ieee/eulerieee",
     "component": "input/tex/extensions/ieee/eulerieee",
-    "targets": ["input/tex/ieee/eulerieee"]
+    "targets": ["input/tex/ieee/eulerieee"],
+    "js": "../../../../../../../js/"
   },
   "webpack": {
     "name": "input/tex/extensions/eulerieee",

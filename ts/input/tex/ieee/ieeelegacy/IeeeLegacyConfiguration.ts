@@ -22,9 +22,9 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import BaseMethods from '../../base/BaseMethods.js';
-import {CommandMap} from '../../TokenMap.js';
-import {Configuration} from '../../Configuration.js';
+import BaseMethods from '@mathjax/src/js/input/tex/base/BaseMethods.js';
+import {CommandMap} from '@mathjax/src/js/input/tex/TokenMap.js';
+import {Configuration} from '@mathjax/src/js/input/tex/Configuration.js';
 
 /**
  * Obsolete macros from the former IEEE extension package.

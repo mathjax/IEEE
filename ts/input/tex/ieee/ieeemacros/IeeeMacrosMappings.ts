@@ -22,9 +22,9 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {CommandMap, EnvironmentMap} from '../../TokenMap.js';
-import {TexConstant} from '../../TexConstants.js';
-import ParseMethods from '../../ParseMethods.js';
+import {CommandMap, EnvironmentMap} from '@mathjax/src/js/input/tex/TokenMap.js';
+import {TexConstant} from '@mathjax/src/js/input/tex/TexConstants.js';
+import ParseMethods from '@mathjax/src/js/input/tex/ParseMethods.js';
 import IeeeMacrosMethods from './IeeeMacrosMethods.js';
 
 

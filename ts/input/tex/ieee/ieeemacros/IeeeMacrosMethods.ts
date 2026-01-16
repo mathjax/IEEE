@@ -22,16 +22,16 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import BaseMethods from '../../base/BaseMethods.js';
-import {ParseMethod} from '../../Types.js';
-import TexParser from '../../TexParser.js';
-import { ParseUtil } from '../../ParseUtil.js';
-import { UnitUtil } from '../../UnitUtil.js';
-import NodeUtil from '../../NodeUtil.js';
-import TexError from '../../TexError.js';
-import {TEXCLASS, MmlNode} from '../../../../core/MmlTree/MmlNode.js';
+import BaseMethods from '@mathjax/src/js/input/tex/base/BaseMethods.js';
+import {ParseMethod} from '@mathjax/src/js/input/tex/Types.js';
+import TexParser from '@mathjax/src/js/input/tex/TexParser.js';
+import { ParseUtil } from '@mathjax/src/js/input/tex/ParseUtil.js';
+import { UnitUtil } from '@mathjax/src/js/input/tex/UnitUtil.js';
+import NodeUtil from '@mathjax/src/js/input/tex/NodeUtil.js';
+import TexError from '@mathjax/src/js/input/tex/TexError.js';
+import {TEXCLASS, MmlNode} from '@mathjax/src/js/core/MmlTree/MmlNode.js';
 import {IeeeArrayItem} from './IeeeMacrosItems.js';
-import {EnvList} from '../../StackItem.js';
+import {EnvList} from '@mathjax/src/js/input/tex/StackItem.js';
 
 
 let IeeeMacrosMethods: Record<string, ParseMethod> = {};

@@ -22,11 +22,11 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {CharacterMap, CommandMap, DelimiterMap} from '../../TokenMap.js';
-import BaseMethods from '../../base/BaseMethods.js';
-import {ParseMethod} from '../../Types.js';
-import {TexConstant} from '../../TexConstants.js';
-import ParseMethods from '../../ParseMethods.js';
+import {CharacterMap, CommandMap, DelimiterMap} from '@mathjax/src/js/input/tex/TokenMap.js';
+import BaseMethods from '@mathjax/src/js/input/tex/base/BaseMethods.js';
+import {ParseMethod} from '@mathjax/src/js/input/tex/Types.js';
+import {TexConstant} from '@mathjax/src/js/input/tex/TexConstants.js';
+import ParseMethods from '@mathjax/src/js/input/tex/ParseMethods.js';
 
 let IeeeStixMethods: Record<string, ParseMethod> = {};
 

@@ -22,7 +22,7 @@
  * @author v.sorge@mathjax.org (Volker Sorge)
  */
 
-import {Configuration} from '../../Configuration.js';
+import {Configuration} from '@mathjax/src/js/input/tex/Configuration.js';
 import {IeeeArrayItem} from './IeeeMacrosItems.js';
 import './IeeeMacrosMappings.js';
 
